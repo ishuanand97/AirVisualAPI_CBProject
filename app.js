@@ -1,7 +1,7 @@
 $.ajax({
     async: true,
     crossDomain: true,
-    url: "http://api.airvisual.com/v2/countries?key=kN5knCsR3KYZmbnz6",
+    url: "https://api.airvisual.com/v2/countries?key=kN5knCsR3KYZmbnz6",
     method: "GET",
     headers: {},
     success: function (response) {
@@ -18,7 +18,7 @@ $.ajax({
 
 function listStates(country_name) {
 
-    var u = "http://api.airvisual.com/v2/states?country=" + country_name + "&key=kN5knCsR3KYZmbnz6";
+    var u = "https://api.airvisual.com/v2/states?country=" + country_name + "&key=kN5knCsR3KYZmbnz6";
 
     var settings = {
         "async": true,
@@ -51,7 +51,7 @@ function lCities() {
     var s = document.getElementById("states").value;
     var c = document.getElementById("mySelect").value;
     console.log(c, s);
-    var u = " http://api.airvisual.com/v2/cities?state=" + s + "&country=" + c + "&key=kN5knCsR3KYZmbnz6";
+    var u = " https://api.airvisual.com/v2/cities?state=" + s + "&country=" + c + "&key=kN5knCsR3KYZmbnz6";
 
     $("#cities").empty();
     var settings = {
@@ -76,7 +76,7 @@ function myFunction() {
     var co = document.getElementById("mySelect").value;
     var ci = document.getElementById("cities").value;
 
-    var u = "http://api.airvisual.com/v2/city?city=" + ci + "&state=" + s + "&country=" + co + "&key=kN5knCsR3KYZmbnz6"
+    var u = "https://api.airvisual.com/v2/city?city=" + ci + "&state=" + s + "&country=" + co + "&key=kN5knCsR3KYZmbnz6"
 
 
     var settings = {
